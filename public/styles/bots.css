@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bots__main {
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-top: 26px;
+    width: 939px;
+}
+.bots__title {
+    font-family: 'lota_bold';
+    font-weight: 700;
+    font-size: 29.4145px;
+    color: #FFFFFF;   
+}
+.bots__map {
+    display: flex;
+    flex-direction: column;
+    width: 919px;
+    max-height: 810px;
+    gap: 7px;
+    margin-top: 24px;
+    overflow-y: auto;
+}
+.bots__map::-webkit-scrollbar {
+    width: 4px;
+}
+.bots__map::-webkit-scrollbar-track {
+    background: #28264C;
+    border-radius: 2px;
+}
+.bots__map::-webkit-scrollbar-thumb {
+    background: #6863C9;
+    border-radius: 2px; 
+}
+.bots__map__item {
+    width: 905px;
+    height: 50px;
+    background: #28264C;
+    border-radius: 3px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18.5px;
+    box-sizing: border-box;
+}
+.bots__map__item__title {
+    font-family:  'lota_bold';
+    font-size: 10.8713px;
+    color: #FFFFFF;
+}
+.bots__map__item__title__link {
+    display: flex;
+    align-items: center;
+    font-family: 'lota__300';
+    font-size: 10.8713px;
+    color: #FFFFFF;
+    background: #17162F;
+    border-radius: 6px;
+    width: 273px;
+    height: 29px;
+    box-sizing: border-box;
+    padding-left: 13px;
+}
+.bots__map__item__save {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 19px;
+    background: #51BBAE;
+    border-radius: 0.867px;
+    font-size: 7.803px;
+    font-weight: 900;
+    font-family: 'lota_bold';
+    color: #FFFFFF;
+}
+.bots__map__item__save span {
+    margin-top: 3px;
+}
+.bots__map__item__line {
+    width: 2px;
+    height: 36px;
+    background: #5B5983;
+    border-radius: 1px;    
+}
+.bots__map__item__name {
+    font-size: 10.8713px;
+    width: 63.29px;
+    height: 10.65px;
+    font-family: 'lota_bold';
+    color: #FFFFFF;
+}
+.bots__map__item__subscribe {
+    font-size: 11px;
+    line-height: 14px;
+    width: 146px;
+    font-family: 'lota_300';
+    height: 11px;
+    color: #FFFFFF;    
+}
+.bots__map__item__buttons{
+    display: flex;
+    gap: 12px;
+}

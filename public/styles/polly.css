@@ -1,0 +1,142 @@
+.authSide__main {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 224px;
+    background: linear-gradient(90.17deg, #100F21 13.85%, #100F21 82.75%);
+}
+.authSide__main__heading__title {
+    font-size: 12px;
+    font-family: "lota_bold";
+    color: #FFFFFF;    
+    margin-left: 8px; 
+}
+.authSide__main__heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.authSide__main__heading__container {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.authSide__main__heading__content {
+    box-sizing: border-box;
+    padding: 0 8px;
+    margin-left: 15px;
+    width: 89.54px;
+    height: 22.82px;
+    background: #28264C;
+    border-radius: 1.75566px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.authSide__main__heading__content__name {
+    font-size: 8.65936px;
+    background: linear-gradient(90deg, #2ABFA6 0%, #786DC7 84.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "lota_bold";
+}
+.authSide__main__heading__content span:last-child {
+    font-size: 8.65936px;
+    font-family: "lota_bold";
+    color: #FFFFFF;
+}
+.authSide__main__header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 19px 0 0 6px;
+}
+.authSide__main__header img {
+    margin-right: 8px;
+}
+.authSide__main__header__title {
+    font-size: 13px;
+    font-family: "lota_bold";
+    color: #FFFFFF;
+}
+.authSide__main__list {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 4px;
+}
+.authSide__main__list-active {
+    max-height: 276px;
+    transition: max-height 0.5s;
+}
+.authSide__main__list-disable {
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+.authSide__main__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #19182A;
+    border-radius: 2px; 
+    width: 204px;
+    height: 36px !important;
+    box-sizing: border-box;
+}
+.authSide__main__list__item__left {
+    display: flex;
+    flex-direction: column;
+}
+.authSide__main__list__item__left__title {
+    font-size: 8px;
+    font-family: "lota_bold";
+    color: #FFFFFF;
+}
+.authSide__main__list__item__left__items {
+    font-size: 8px;
+    font-family: "lota_300";
+    color: #FFFFFF;
+
+}
+.authSide__main__list__item__left__item {
+    display: flex;
+    gap: 4px;
+}
+.authSide__main__list__item__count span:first-child {
+    font-size: 8.65936px;
+    font-family: "lota_bold";
+    color: #FFFFFF;
+}
+.authSide__main__list__item__count {
+    display: flex;
+    gap: 1.5px;
+}
+.authSide__main__down__title {
+    font-size: 5.06189px;
+    font-family: "lota_300";
+    color: #FFFFFF;
+
+}
+.authSide__main__list__item__down {
+    display: flex;
+    gap: 4px;
+}
+.authSide__main__down__list__item__content{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.authSide__main__down__list__item {
+    display: flex;
+    gap: 12.5px;
+    background: #19182A;
+    border-radius: 2px;
+    width: 204px;
+    height: 36px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    align-items: center;
+}

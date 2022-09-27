@@ -1,0 +1,117 @@
+.slider__section {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider__container {
+    width: 481px;
+    height: 379px;
+    background: #100F21;
+    border-radius: 7px;
+}
+.slider__main {
+    width: 100%;
+    height: 318px;
+    background: inherit;
+}
+.slider__info {
+    box-sizing: border-box;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 61px;
+    background: #28264C;
+    border-radius: 3px;
+}
+.slider__info__text {
+    width: 324px;
+    font-family: 'lota_300';
+    font-size: 7.77081px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+.slider__info__border {
+    width: 2px;
+    height: 43px;
+    background: #5B5983;
+    border-radius: 1px;
+}
+.slider__info__right {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.slider__info__checkout {
+    display: flex;
+    width: 94px;
+    height: 22px;
+    background: #17162F;
+    border-radius: 2px;
+}
+.slider__info__checkout__inner {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 22px;
+    background: #51BBAE;
+    border-radius: 2px;
+    font-weight: 900;
+    font-family: 'lota_bold';
+    font-size: 10px;
+    color: #FFFFFF;
+}
+.slider__info__checkout__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 22px;
+    background: #17162F;
+    border-radius: 2px;
+    font-family: 'lota_bold';
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.slider__info__stock {
+    font-family: 'lota_300';
+    font-size: 7.77081px;
+    color: #FFFFFF
+}
+
+.slider__main {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.slider__main__slide {
+    display: flex;
+    height: 298px;
+    justify-content: space-between;
+    align-items: center;
+    background: #0B0A17;
+    border-radius: 7px;
+}
+.slider__main__slide__arrow {
+    margin-right: -4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 58px;
+    background: linear-gradient(274.44deg, #28264C 4.63%, rgba(40, 38, 76, 0) 130.58%);
+    border-radius: 1.52632px;
+} 
+.slider__arrow-left {
+    margin-left: -4px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
