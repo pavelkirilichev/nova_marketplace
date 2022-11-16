@@ -105,3 +105,16 @@
     display: flex;
     gap: 12px;
 }
+@media (max-width: 1280px) {
+    .bots__main {
+        width: initial;
+    }
+    .bots__map__item {
+        margin-right: 10px;
+        width: 830px;
+        padding: 0 10px;
+    }
+    .bots__map {
+        width: initial;
+    }
+}

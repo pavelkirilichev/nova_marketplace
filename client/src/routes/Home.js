@@ -16,12 +16,11 @@ function Home() {
     content = <Bots />;
   }
 
-  let sidebar = <AuthSideBar />;
+  let sidebar = <NoAuthSideBar />;
 
   return (
     <div className="wrapper">
       <div className="mp__main">
-        <Slider />
         <div className="mp__sidebar__left">
           <img src="./img/marketplace/logo.png" className="mp__sidebar__logo" />
           <ul className="mp__sidebar__left__list">
