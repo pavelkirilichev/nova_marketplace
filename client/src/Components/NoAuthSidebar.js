@@ -7,7 +7,7 @@ function NoAuthSideBar() {
         <img src="./img/marketplace/discord_icon.png" />
         <span>Connect discord</span>
       </div>
-      <Wallet />
+      <Wallet style={{ with: "100%" }} />
     </div>
   );
 }

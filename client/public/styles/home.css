@@ -1,351 +1,353 @@
-
 @font-face {
-	font-family: 'lota_bold'; 
-	src: url(../fonts/lota_bold.otf); 
+  font-family: "lota_bold";
+  src: url(../fonts/lota_bold.otf);
 }
 @font-face {
-	font-family: 'lota_black'; 
-	src: url(../fonts/lota_black.otf); 
+  font-family: "lota_black";
+  src: url(../fonts/lota_black.otf);
 }
 @font-face {
-	font-family: 'lota_white'; 
-	src: url(../fonts/lota_white.otf); 
+  font-family: "lota_white";
+  src: url(../fonts/lota_white.otf);
 }
 @font-face {
-	font-family: 'lota_300'; 
-	src: url(../fonts/lota_300.otf); 
+  font-family: "lota_300";
+  src: url(../fonts/lota_300.otf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background: linear-gradient(90.17deg, #100F21 13.85%, #100F21 82.75%);
+  background: linear-gradient(90.17deg, #100f21 13.85%, #100f21 82.75%);
 }
 a {
-    text-decoration:none;
+  text-decoration: none;
 }
 
 input {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 button {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .mp__main {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .mp__sidebar__left {
-    box-sizing: border-box;
-    height: 100%;
-    width: 178px;
-    background: #121123;
-    border-right: 1px solid #19182A;
+  box-sizing: border-box;
+  height: 100%;
+  width: 178px;
+  background: #121123;
+  border-right: 1px solid #19182a;
 }
 .mp__sidebar__logo {
-    margin: 38px 0 0 61px;
-    width: 56px;
-    height: 39.83px;
+  margin: 38px 0 0 61px;
+  width: 56px;
+  height: 39.83px;
 }
 .mp__sidebar__left__list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 49px;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 49px;
+  gap: 16px;
 }
 .mp__sidebar__left__item {
-    cursor: pointer;
-    width: 100%;
-    height: 27px;
+  cursor: pointer;
+  width: 100%;
+  height: 27px;
 }
 .mp__sidebar__left__item__inner {
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .mp__sidebar__left__item__text {
-    margin-left: 41px;
-    font-family: 'lota_bold';
-    font-size: 14.0678px;
-    line-height: 18px;
-    color: #FFFFFF;
-    letter-spacing: 0.01em;
+  margin-left: 41px;
+  font-family: "lota_bold";
+  font-size: 14.0678px;
+  line-height: 18px;
+  color: #ffffff;
+  letter-spacing: 0.01em;
 }
 .mp__sidebar__left__item__border-active {
-    position: absolute;
-    top: 0;
-    right: -2px;
-    width: 2px;
-    height: 27px;
-    background: linear-gradient(180deg, #31AAB3 0%, #6863C9 100%);
-    border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 2px;
+  height: 27px;
+  background: linear-gradient(180deg, #31aab3 0%, #6863c9 100%);
+  border-radius: 2px;
 }
 
 .mp__sidebar__right {
-    display: flex;
-    justify-content: center;
-    margin-top: 29px;
-    margin-bottom: 44px;
-    width: 242px;
-    height: auto;
-    border-left: 2px solid #19182A;
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+  margin-bottom: 44px;
+  width: 242px;
+  height: auto;
+  border-left: 2px solid #19182a;
 }
 .mp__sidebar__right__btn__list {
-    margin-top: 1px;
-    width: 198px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  margin-top: 1px;
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .mp__sidebar__right__btn__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 100%;
-    height: 51px;
-    background: #19182A;
-    border-radius: 2.9385px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 51px;
+  background: #19182a;
+  border-radius: 2.9385px;
 }
 .mp__sidebar__right__btn__item span {
-    margin-left: 11px;
-    font-family: 'lota_bold';
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF;
+  margin-left: 11px;
+  font-family: "lota_bold";
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 .mp__main__container {
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 861px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 861px;
 }
 .mp__banner {
-    background-image: url(../img/marketplace/banner_bg.png);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 54px;
-    width: auto;
-    height: 260px;
+  background-image: url(../img/marketplace/banner_bg.png);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 54px;
+  width: auto;
+  height: 260px;
 }
 .mp__banner__title-div {
-    margin-left: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .mp__banner__title {
-    font-family: 'lota_black';
-    font-weight: 900;
-    font-size: 53.8434px;
-    background: linear-gradient(89.97deg, #26C3A4 -0.76%, #7A6AC8 102.13%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-family: "lota_black";
+  font-weight: 900;
+  font-size: 53.8434px;
+  background: linear-gradient(89.97deg, #26c3a4 -0.76%, #7a6ac8 102.13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .mp__banner__subtitle {
-    font-family: 'lota_bold';
-    font-weight: 700;
-    font-size: 27.4065px;
-    color: #FFFFFF;
+  font-family: "lota_bold";
+  font-weight: 700;
+  font-size: 27.4065px;
+  color: #ffffff;
 }
 .mp__banner__content {
-    margin-left: 5%;
-    font-family: 'lota_300';
-    font-weight: 300;
-    width: 410px;
-    font-size: 17.4766px;
-    line-height: 23px;
-    color: #FFFFFF;
+  margin-left: 5%;
+  font-family: "lota_300";
+  font-weight: 300;
+  width: 410px;
+  font-size: 17.4766px;
+  line-height: 23px;
+  color: #ffffff;
 }
 .mp__popular-goods {
-    margin-top: 27px;
-    padding-bottom: 17px;
-    border-bottom: 3px solid #19182A;
-    width: 100%;
+  margin-top: 27px;
+  padding-bottom: 17px;
+  border-bottom: 3px solid #19182a;
+  width: 100%;
 }
 .mp__popular-goods__title {
-    font-family: 'lota_bold';
-    font-weight: 700;
-    font-size: 22.2093px;
-    color: #FFFFFF;
+  font-family: "lota_bold";
+  font-weight: 700;
+  font-size: 22.2093px;
+  color: #ffffff;
 }
 .mp__popular-goods__list {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
 }
 .mp__popular-goods__item {
-    cursor: pointer;
-    display: flex;
+  cursor: pointer;
+  display: flex;
 }
 .mp__popular-goods__item__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52.34px;
-    height: 46.79px;
-    background: #19182A;
-    border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52.34px;
+  height: 46.79px;
+  background: #19182a;
+  border-radius: 2px;
 }
 .mp__popular-goods__item__inner {
-    margin-left: 9px;
-    display: flex;
-    flex-direction: column;
+  margin-left: 9px;
+  display: flex;
+  flex-direction: column;
 }
 .mp__popular-goods__item__inner__top {
-    box-sizing: border-box;
-    padding-left: 9px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 103.6px;
-    height: 33.42px;
-    background: #27254A;
-    border-radius: 2px;
+  box-sizing: border-box;
+  padding-left: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 103.6px;
+  height: 33.42px;
+  background: #27254a;
+  border-radius: 2px;
 }
 .mp__popular-goods__item__inner__title {
-    font-family: 'lota_white';
-    font-weight: 700;
-    font-size: 8px;
-    line-height: 10px;
-    color: #FFFFFF;
+  font-family: "lota_white";
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
 }
 .mp__popular-goods__item__inner__subtitle {
-    font-family: 'lota_300';
-    font-weight: 300;
-    font-size: 5px;
-    line-height: 7px;
-    color: #FFFFFF;
+  font-family: "lota_300";
+  font-weight: 300;
+  font-size: 5px;
+  line-height: 7px;
+  color: #ffffff;
 }
 .mp__popular-goods__item__inner__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -3px;
-    width: 47.9px;
-    height: 16.71px;
-    background: #64C7A3;
-    border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3px;
+  width: 47.9px;
+  height: 16.71px;
+  background: #64c7a3;
+  border-radius: 1px;
 }
 .mp__popular-goods__item__inner__bottom span {
-    font-family: 'lota_white';
-    font-weight: 900;
-    font-size: 8px;
-    line-height: 10px;
-    color: #FFFFFF;
+  font-family: "lota_white";
+  font-weight: 900;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
 }
 
 .mp__goods {
-    margin-top: 17px;
-    width: 100%;
+  margin-top: 17px;
+  width: 100%;
 }
 .mp__goods__title {
-    font-family: 'lota_bold';
-    font-weight: 700;
-    font-size: 22.2093px;
-    color: #FFFFFF;
+  font-family: "lota_bold";
+  font-weight: 700;
+  font-size: 22.2093px;
+  color: #ffffff;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 .mp__goods__list {
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 12.73px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 12.73px;
 }
 .mp__goods__item {
-    cursor: pointer;
-    margin-bottom: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 .mp__goods__item__inner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 132.5px;
-    height: 147.9px;
-    background: #19182A;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 132.5px;
+  height: 147.9px;
+  background: #19182a;
 }
 .mp__goods__item__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 102.9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 102.9px;
 }
 .mp__goods__item__inner__info {
-    box-sizing: border-box;
-    padding-left: 10px;
-    padding-top: 6px;
-    width: 132px;
-    height: 45px;
-    background: linear-gradient(95.44deg, #28254B 0.56%, #28264C 99.86%);
-    border-radius: 2.9385px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 6px;
+  width: 132px;
+  height: 45px;
+  background: linear-gradient(95.44deg, #28254b 0.56%, #28264c 99.86%);
+  border-radius: 2.9385px;
 }
 .mp__goods__item__inner__info {
-    font-family: 'lota_white';
-    font-weight: 700;
-    font-size: 9px;
-    color: #FFFFFF;
+  font-family: "lota_white";
+  font-weight: 700;
+  font-size: 9px;
+  color: #ffffff;
 }
 .mp__goods__item__info__subtitle {
-    margin-top: 1px;
-    font-family: 'lota_300';
-    font-weight: 300;
-    font-size: 6px;
-    color: #FFFFFF;
+  margin-top: 1px;
+  font-family: "lota_300";
+  font-weight: 300;
+  font-size: 6px;
+  color: #ffffff;
 }
 .mp__goods__item__info__bottom {
-    position: absolute;
-    top: 137px;
-    left: 37.5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 57px;
-    height: 22px;
-    background: #64C7A3;
-    border-radius: 1px;
+  position: absolute;
+  top: 137px;
+  left: 37.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 22px;
+  background: #64c7a3;
+  border-radius: 1px;
 }
 .mp__goods__item__info__bottom span {
-    font-family: 'lota_white';
-    font-weight: 900;
-    font-size: 9px;
-    color: #FFFFFF;
+  font-family: "lota_white";
+  font-weight: 900;
+  font-size: 9px;
+  color: #ffffff;
 }
 .wallet-adapter-button-trigger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: initial;
+}
+.wallet-adapter-button-trigger {
+  width: 100%;
 }
 @media (max-width: 1280px) {
-    .mp__sidebar__right {
-        box-sizing: border-box;
-        padding: 0 10px;
-        width: 215px;
-    }
-    .mp__banner {
-        width: 800px;
-    }
-    .mp__main__container {
-        width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .mp__sidebar__right {
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 215px;
+  }
+  .mp__banner {
+    width: 800px;
+  }
+  .mp__main__container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
