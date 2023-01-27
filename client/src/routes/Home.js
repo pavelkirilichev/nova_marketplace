@@ -6,20 +6,47 @@ import Slider from "../Components/Slider";
 import AuthSideBar from "./AuthSideBar";
 
 function Home() {
+  const [slider, setSlider] = useState(0);
   const [chapter, setChapter] = useState("Marketplase");
 
-  let content = <MainContainer />;
+  let content;
 
   if (chapter == "Marketplase") {
-    content = <MainContainer />;
+    content = <MainContainer setSlider={setSlider} />;
   } else if (chapter == "Bots") {
     content = <Bots />;
   }
+  const [messageList, setMessageList] = useState([]);
 
-  let sidebar = <NoAuthSideBar />;
+  let sidebar = (
+    <NoAuthSideBar messageList={messageList} setMessageList={setMessageList} />
+  );
 
   return (
     <div className="wrapper">
+      <div className="messages">
+        {messageList.map((message) => {
+          return (
+            <div
+              className={message.classItem}
+              key={message.id}
+              onClick={() => {
+                setMessageList(
+                  messageList.filter(
+                    (message_item) => message_item.id != message.id
+                  )
+                );
+              }}
+            >
+              <span className="message__title">{message.title}</span>
+              <div className="message__line__block">
+                <div className={message.class}></div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <Slider slider={slider} setSlider={setSlider} />
       <div className="mp__main">
         <div className="mp__sidebar__left">
           <img src="./img/marketplace/logo.png" className="mp__sidebar__logo" />

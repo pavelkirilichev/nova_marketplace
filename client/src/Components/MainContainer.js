@@ -1,4 +1,7 @@
-function MainContainer() {
+import { useState } from "react";
+import Slider from "../Components/Slider";
+
+function MainContainer({ setSlider }) {
   return (
     <div className="mp__content">
       <div className="mp__main__container">
@@ -18,7 +21,13 @@ function MainContainer() {
         <div className="mp__popular-goods">
           <span className="mp__popular-goods__title">POPULAR GOODS</span>
           <ul className="mp__popular-goods__list">
-            <li className="mp__popular-goods__item">
+            <li
+              className="mp__popular-goods__item"
+              onClick={() => {
+                console.log("ok");
+                setSlider(1);
+              }}
+            >
               <div className="mp__popular-goods__item__icon">
                 <img src="./img/marketplace/discord_good.svg" />
               </div>
@@ -36,7 +45,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__popular-goods__item">
+            <li
+              className="mp__popular-goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__popular-goods__item__icon">
                 <img src="./img/marketplace/cli.svg" />
               </div>
@@ -54,7 +68,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__popular-goods__item">
+            <li
+              className="mp__popular-goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__popular-goods__item__icon">
                 <img src="./img/marketplace/white_list.svg" />
               </div>
@@ -72,7 +91,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__popular-goods__item">
+            <li
+              className="mp__popular-goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__popular-goods__item__icon">
                 <img src="./img/marketplace/art.svg" />
               </div>
@@ -90,7 +114,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__popular-goods__item">
+            <li
+              className="mp__popular-goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__popular-goods__item__icon">
                 <img src="./img/marketplace/board.svg" />
               </div>
@@ -113,7 +142,12 @@ function MainContainer() {
         <div className="mp__goods">
           <span className="mp__goods__title">GOODS</span>
           <ul className="mp__goods__list">
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/discord_plus.svg" />
@@ -131,7 +165,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/discord_good_big.svg" />
@@ -149,7 +188,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/cli_big.svg" />
@@ -165,7 +209,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/gui.svg" />
@@ -181,7 +230,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/token_board.svg" />
@@ -199,7 +253,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/dollar_board.svg" />
@@ -217,7 +276,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/board_big.svg" />
@@ -235,7 +299,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/white_list_big.svg" />
@@ -253,7 +322,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/art_big.svg" />
@@ -269,7 +343,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/discord_good_big.svg" />
@@ -287,7 +366,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/twitter_good_big.svg" />
@@ -305,7 +389,12 @@ function MainContainer() {
                 </div>
               </div>
             </li>
-            <li className="mp__goods__item">
+            <li
+              className="mp__goods__item"
+              onClick={() => {
+                setSlider(1);
+              }}
+            >
               <div className="mp__goods__item__inner">
                 <div className="mp__goods__item__image">
                   <img src="./img/marketplace/mail_good_big.svg" />

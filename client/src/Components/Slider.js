@@ -1,16 +1,38 @@
-function Slider() {
+function Slider({ slider, setSlider }) {
+  let slider_class;
+  if (slider == 0) {
+    slider_class = "slider__section ";
+  } else if (slider == 1) {
+    slider_class = "slider__section slider__section--active";
+  } else {
+    slider_class = "slider__section slider__section--disable";
+  }
   return (
-    <div className="slider__section">
+    <div
+      className={slider_class}
+      onClick={(e) => {
+        if (e.currentTarget === e.target) {
+          setSlider(2);
+          setTimeout(() => {
+            setSlider(0);
+          }, 250);
+        }
+      }}
+    >
       <div className="slider__container">
+        <img
+          src="/img/marketplace/slider/close.svg"
+          className="slider__close"
+          onClick={() => {
+            setSlider(2);
+            setTimeout(() => {
+              setSlider(0);
+            }, 250);
+          }}
+        />
         <div className="slider__main">
           <div className="slider__main__slide">
-            <div className="slider__main__slide__arrow slider__arrow-left">
-              <img src="./img/marketplace/slider/arrow.svg" />
-            </div>
             <img src="./img/marketplace/slider/cli.svg" />
-            <div className="slider__main__slide__arrow">
-              <img src="./img/marketplace/slider/arrow.svg" />
-            </div>
           </div>
         </div>
         <div className="slider__info">
