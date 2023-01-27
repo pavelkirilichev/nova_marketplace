@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Bots from "../Components/Bots";
 import MainContainer from "../Components/MainContainer";
+import Message from "../Components/Message";
 import NoAuthSideBar from "../Components/NoAuthSidebar";
 import Slider from "../Components/Slider";
 import AuthSideBar from "./AuthSideBar";
@@ -22,29 +23,18 @@ function Home() {
     <NoAuthSideBar messageList={messageList} setMessageList={setMessageList} />
   );
 
+  function removeMessage(id) {
+    setMessageList(messageList.filter((message_item) => message_item.id != id));
+  }
+
   return (
     <div className="wrapper">
       <div className="messages">
-        {messageList.map((message) => {
-          return (
-            <div
-              className={message.classItem}
-              key={message.id}
-              onClick={() => {
-                setMessageList(
-                  messageList.filter(
-                    (message_item) => message_item.id != message.id
-                  )
-                );
-              }}
-            >
-              <span className="message__title">{message.title}</span>
-              <div className="message__line__block">
-                <div className={message.class}></div>
-              </div>
-            </div>
-          );
-        })}
+        {messageList.length != 0
+          ? messageList.map((message) => (
+              <Message item={message} removeMessage={removeMessage} />
+            ))
+          : ""}
       </div>
       <Slider slider={slider} setSlider={setSlider} />
       <div className="mp__main">

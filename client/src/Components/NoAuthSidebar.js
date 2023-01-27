@@ -6,43 +6,35 @@ function NoAuthSideBar({ messageList, setMessageList }) {
       <div
         className="mp__sidebar__right__btn__item"
         onClick={() => {
-          let arr;
-          if (typeof messageList != "undefined") {
-            arr = messageList.slice();
-          } else {
-            arr = [];
+          let arr = messageList.slice();
+          if (messageList.length == 15) {
+            console.log("over");
+            setMessageList(
+              messageList.filter((message_item) => message_item.id != 0)
+            );
+            messageList = [];
           }
 
-          let index;
           if (arr.length == 0) {
-            index = 0;
-          } else {
-            index = arr.length;
-          }
-
-          console.log(index);
-          let id = Date.now();
-          arr.push({
-            id: id,
-            title: "Comming Soon",
-            class: "message__line message__line--active",
-            classItem: "message",
-          });
-          setMessageList(arr);
-          setTimeout(() => {
-            arr[index] = {
-              id: id,
+            console.log(0);
+            arr.push({
+              id: Date.now(),
               title: "Comming Soon",
               class: "message__line message__line--active",
-              classItem: "message message--active",
-            };
+              classItem: "message",
+            });
             setMessageList(arr);
-            setTimeout(() => {
-              setMessageList(
-                arr.filter((message_item) => message_item.id != id)
-              );
-            }, 500);
-          }, 1000);
+          } else {
+            setMessageList([
+              ...messageList,
+              {
+                id: Date.now(),
+                title: "Comming Soon",
+                class: "message__line message__line--active",
+                classItem: "message",
+              },
+            ]);
+          }
         }}
       >
         <img src="./img/marketplace/discord_icon.png" />

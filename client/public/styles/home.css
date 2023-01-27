@@ -336,8 +336,9 @@ ul {
   width: 100%;
 }
 .messages {
+  overflow: hidden;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 7.5px;
   position: absolute;
   bottom: 11px;
@@ -345,6 +346,7 @@ ul {
   float: bottom;
 }
 .message {
+  flex-shrink: 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -380,9 +382,10 @@ ul {
   -webkit-animation-fill-mode: forwards;
 }
 .message--active {
-  -webkit-animation: animateThis2 1s ease-in;
+  -webkit-animation: animateThis2 0.5s ease-in;
   -webkit-animation-fill-mode: forwards;
 }
+
 @-webkit-keyframes animateThis {
   0% {
     width: 100%;
