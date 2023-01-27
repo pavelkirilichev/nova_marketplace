@@ -345,7 +345,6 @@ ul {
   float: bottom;
 }
 .message {
-  opacity: 1;
   position: relative;
   display: flex;
   justify-content: center;
@@ -372,18 +371,33 @@ ul {
   bottom: 0;
 }
 .message__line {
-  width: 100%;
   height: 4px;
   background: #5f5c8b;
   border-radius: 0px 0px 4px 0px;
 }
 .message__line--active {
-  width: 0;
-  transition: width 1s;
+  -webkit-animation: animateThis 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
 }
 .message--active {
-  opacity: 0;
-  transition: opacity 0.5s;
+  -webkit-animation: animateThis2 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes animateThis {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes animateThis2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1280px) {

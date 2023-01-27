@@ -25,7 +25,7 @@ function NoAuthSideBar({ messageList, setMessageList }) {
           arr.push({
             id: id,
             title: "Comming Soon",
-            class: "message__line",
+            class: "message__line message__line--active",
             classItem: "message",
           });
           setMessageList(arr);
@@ -34,24 +34,15 @@ function NoAuthSideBar({ messageList, setMessageList }) {
               id: id,
               title: "Comming Soon",
               class: "message__line message__line--active",
-              classItem: "message",
+              classItem: "message message--active",
             };
             setMessageList(arr);
             setTimeout(() => {
-              arr[index] = {
-                id: id,
-                title: "Comming Soon",
-                class: "message__line message__line--active",
-                classItem: "message message--active",
-              };
-              setMessageList(arr);
-              setTimeout(() => {
-                setMessageList(
-                  arr.filter((message_item) => message_item.id != id)
-                );
-              }, 500);
-            }, 4000);
-          }, 100);
+              setMessageList(
+                arr.filter((message_item) => message_item.id != id)
+              );
+            }, 500);
+          }, 1000);
         }}
       >
         <img src="./img/marketplace/discord_icon.png" />
