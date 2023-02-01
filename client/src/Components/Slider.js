@@ -1,4 +1,4 @@
-function Slider({ slider, setSlider }) {
+function Slider({ slider, setSlider, sliderData }) {
   let slider_class;
   if (slider == 0) {
     slider_class = "slider__section ";
@@ -31,18 +31,15 @@ function Slider({ slider, setSlider }) {
           }}
         />
         <div className="slider__main">
-          <div className="slider__main__slide">
-            <img src="./img/marketplace/slider/cli.svg" />
-          </div>
+          <div
+            className="slider__main__slide"
+            style={{
+              backgroundImage: `url(/img/marketplace/${sliderData.image_name})`,
+            }}
+          ></div>
         </div>
         <div className="slider__info">
-          <p className="slider__info__text">
-            Many many text many many text many text many many text many text
-            many many text many text many many text vany many text many many
-            text many text many many text many text many many text many text
-            many many text many many text many text many many text many text
-            many many text
-          </p>
+          <p className="slider__info__text">{sliderData.description}</p>
           <div className="slider__info__border"></div>
           <div className="slider__info__right">
             <div className="slider__info__checkout">

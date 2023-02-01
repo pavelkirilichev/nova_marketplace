@@ -7,13 +7,7 @@ function Message({ item, removeMessage }) {
     setMessage({ ...item, classItem: "message message--active" });
   }, 1000);
   return (
-    <div
-      className={message.classItem}
-      key={item.id}
-      onClick={() => {
-        removeMessage(item.id);
-      }}
-    >
+    <div className={message.classItem} key={item.id}>
       <span className="message__title">{message.title}</span>
       <div className="message__line__block ">
         <div className="message__line message__line--active"></div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Bots from "../Components/Bots";
 import MainContainer from "../Components/MainContainer";
 import Message from "../Components/Message";
@@ -8,12 +8,15 @@ import AuthSideBar from "./AuthSideBar";
 
 function Home() {
   const [slider, setSlider] = useState(0);
+  const [sliderData, setSliderData] = useState({});
   const [chapter, setChapter] = useState("Marketplase");
 
   let content;
 
   if (chapter == "Marketplase") {
-    content = <MainContainer setSlider={setSlider} />;
+    content = (
+      <MainContainer setSlider={setSlider} setSliderData={setSliderData} />
+    );
   } else if (chapter == "Bots") {
     content = <Bots />;
   }
@@ -36,7 +39,7 @@ function Home() {
             ))
           : ""}
       </div>
-      <Slider slider={slider} setSlider={setSlider} />
+      <Slider slider={slider} setSlider={setSlider} sliderData={sliderData} />
       <div className="mp__main">
         <div className="mp__sidebar__left">
           <img src="./img/marketplace/logo.png" className="mp__sidebar__logo" />
@@ -80,14 +83,14 @@ function Home() {
             <li
               className="mp__sidebar__left__item"
               onClick={() => {
-                setChapter("Dashboard");
+                setChapter("Bots");
               }}
             >
               <div className="mp__sidebar__left__item__inner">
                 <span className="mp__sidebar__left__item__text">Dashboard</span>
                 <div
                   className={
-                    chapter == "Dashboard"
+                    chapter == "Bots"
                       ? "mp__sidebar__left__item__border-active"
                       : "mp__sidebar__left__item__border"
                   }
@@ -105,23 +108,6 @@ function Home() {
                 <div
                   className={
                     chapter == "Support"
-                      ? "mp__sidebar__left__item__border-active"
-                      : "mp__sidebar__left__item__border"
-                  }
-                ></div>
-              </div>
-            </li>
-            <li
-              className="mp__sidebar__left__item"
-              onClick={() => {
-                setChapter("Bots");
-              }}
-            >
-              <div className="mp__sidebar__left__item__inner">
-                <span className="mp__sidebar__left__item__text">Bots</span>
-                <div
-                  className={
-                    chapter == "Bots"
                       ? "mp__sidebar__left__item__border-active"
                       : "mp__sidebar__left__item__border"
                   }

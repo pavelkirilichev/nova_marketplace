@@ -1,7 +1,7 @@
 function Bots() {
   return (
     <div className="bots__main">
-      <span className="bots__title">Bots</span>
+      <span className="bots__title">Your Bots</span>
       <div className="bots__map">
         <div className="bots__map__item">
           <span className="bots__map__item__title">Link:</span>
