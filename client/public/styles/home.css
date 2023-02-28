@@ -54,6 +54,7 @@ button {
   border-right: 1px solid #19182a;
 }
 .mp__sidebar__logo {
+  cursor: pointer;
   margin: 38px 0 0 61px;
   width: 56px;
   height: 39.83px;
