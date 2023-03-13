@@ -26,14 +26,13 @@
 .slider__container {
   position: relative;
   width: 481px;
-  height: 379px;
   background: #100f21;
   border-radius: 7px;
 }
 .slider__main {
   border-radius: 7px 7px 0 0;
   width: 100%;
-  height: 318px;
+  height: 322px;
   background: inherit;
 }
 .slider__info {
@@ -43,23 +42,20 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 61px;
   background: #28264c;
   border-radius: 3px;
 }
 .slider__info__text {
+  padding-right: 10px;
+  border-right: 2px solid #5b5983;
   width: 324px;
   font-family: "lota_300";
-  font-size: 7.77081px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 16px;
   color: #ffffff;
-}
-.slider__info__border {
-  width: 2px;
-  height: 43px;
-  background: #5b5983;
   border-radius: 1px;
 }
+
 .slider__info__right {
   display: flex;
   flex-direction: column;
@@ -107,18 +103,24 @@
 
 .slider__main {
   box-sizing: border-box;
-  padding: 29px 10px 10px 10px;
-}
-.slider__main__slide {
-  width: 100%;
   display: flex;
-  height: 288px;
+  justify-content: space-between;
+}
+.slider__left {
+  width: 259px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #17162f;
+}
+.slider__main__slide {
+  box-sizing: border-box;
+  width: 228px;
+  height: 276px;
   background: #0b0a17;
   border-radius: 7px;
   background-repeat: no-repeat;
-  background-size: 55% 200px;
+  background-size: 70% 200px;
   background-position: 50% 50%;
 }
 .slider__main__slide__arrow {
@@ -146,4 +148,38 @@
   position: absolute;
   top: 9px;
   right: 9px;
+}
+.slider__form {
+  width: 222px;
+  height: 100%;
+  background: #28264c;
+}
+.slider__form__inner {
+  margin-top: 30px;
+  margin-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 182px;
+}
+.slider__form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.slider__form__item span {
+  font-family: "lota_bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+}
+.slider__form__item input {
+  box-sizing: border-box;
+  padding: 2px 5px;
+  width: 182px;
+  height: 20px;
+  background: #17162f;
+  border-radius: 2px;
+  color: #fff;
 }

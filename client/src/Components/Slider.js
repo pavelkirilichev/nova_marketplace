@@ -32,12 +32,38 @@ function Slider({ slider, setSlider, sliderData }) {
             }}
           />
           <div className="slider__main">
-            <div
-              className="slider__main__slide"
-              style={{
-                backgroundImage: `url(/img/marketplace/${sliderData.image_name})`,
-              }}
-            ></div>
+            <div className="slider__left">
+              <div
+                className="slider__main__slide"
+                style={{
+                  backgroundImage: `url(/img/marketplace/${sliderData.image_name})`,
+                }}
+              ></div>
+            </div>
+            <div className="slider__form">
+              <div className="slider__form__inner">
+                <div className="slider__form__item">
+                  <span>Adress 1</span>
+                  <input type="text" />
+                </div>
+                <div className="slider__form__item">
+                  <span>Adress 1</span>
+                  <input type="text" />
+                </div>
+                <div className="slider__form__item">
+                  <span>Adress 1</span>
+                  <input type="text" />
+                </div>
+                <div className="slider__form__item">
+                  <span>Adress 1</span>
+                  <input type="text" />
+                </div>
+                <div className="slider__form__item">
+                  <span>Adress 1</span>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="slider__info">
             <p className="slider__info__text">{sliderData.description}</p>
@@ -47,7 +73,6 @@ function Slider({ slider, setSlider, sliderData }) {
                 <div className="slider__info__checkout__inner">Checkout</div>
                 <div className="slider__info__checkout__count">1</div>
               </div>
-              <span className="slider__info__stock">Stock: 1000</span>
             </div>
           </div>
         </div>

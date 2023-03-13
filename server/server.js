@@ -7,7 +7,7 @@ app.get("/goods", (req, res) => {
       id: 1,
       title: "Discord account",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Discord account email + phone verified",
       price: 5,
       orders: 1,
@@ -17,7 +17,7 @@ app.get("/goods", (req, res) => {
       id: 2,
       title: "Discord account",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Discord account email verified",
       price: 2,
       orders: 2,
@@ -27,7 +27,7 @@ app.get("/goods", (req, res) => {
       id: 3,
       title: "CLI Bot",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Bot for copping NFT without interface",
       price: 10,
       orders: 3,
@@ -37,7 +37,7 @@ app.get("/goods", (req, res) => {
       id: 4,
       title: "GUI Bot",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Bot for copping NFT with interface",
       price: 15,
       orders: 1,
@@ -47,7 +47,7 @@ app.get("/goods", (req, res) => {
       id: 5,
       title: "Token tracking bot",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Tracking bot for token",
       price: 2,
       orders: 1,
@@ -57,7 +57,7 @@ app.get("/goods", (req, res) => {
       id: 6,
       title: "Listing alerts",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Sales/Listing alerts",
       price: 2,
       orders: 1,
@@ -67,7 +67,7 @@ app.get("/goods", (req, res) => {
       id: 7,
       title: "Tracking bot",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "Collection tracking bot",
       price: 8,
       orders: 1,
@@ -78,7 +78,7 @@ app.get("/goods", (req, res) => {
       id: 8,
       title: "White list",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "White list from partner or stuff",
       price: 2,
       orders: 1,
@@ -88,7 +88,7 @@ app.get("/goods", (req, res) => {
       id: 9,
       title: "Art",
       description:
-        "Many many text many many text many text many many text many text many many text many text many many text vany many text many many text many text many many text many text many many text many text many many text many many text many text many many text many text many many text",
+        "Many many text many many text many text many many text many text many many text",
       description_short: "CG or hand drw art",
       price: 2,
       orders: 1,
